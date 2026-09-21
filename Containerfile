@@ -6,7 +6,7 @@ ARG NODE_VERSION=22
 # =============================================================================
 # Stage 1: Build pyodbc wheel
 # =============================================================================
-FROM python:3.12-alpine AS pyodbc-builder
+FROM python:3.14-alpine AS pyodbc-builder
 
 # Install build dependencies
 RUN apk add --no-cache \
